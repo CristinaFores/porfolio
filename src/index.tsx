@@ -1,15 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+import App from "./App/App";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./style/GlobalStyle";
+import mainStyleColors from "./style/themeColors";
+import "@fontsource/roboto-mono";
+import "@fontsource/roboto";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={mainStyleColors}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
