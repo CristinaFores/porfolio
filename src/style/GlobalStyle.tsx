@@ -38,7 +38,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font-family: "Roboto", sans-serif;
 }
 
 p,

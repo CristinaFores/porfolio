@@ -8,6 +8,7 @@ const mainStyleColors: DefaultTheme = {
       lighGrey: "#f2f2f2",
       text: "#333333",
       darkBlue: "#1f203a",
+      grey: "#cccccc",
     },
   },
 };
