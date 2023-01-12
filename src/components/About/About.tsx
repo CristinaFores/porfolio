@@ -22,7 +22,7 @@ const About = (): JSX.Element => {
       </h2>
       <h3>
         Full-stack
-        <b> web developer </b>
+        <b> Web developer </b>
       </h3>
       <p>{showText ? article.disc : article.disc.substring(0, 0) + ""}</p>
       <AboutButtonStyled>
