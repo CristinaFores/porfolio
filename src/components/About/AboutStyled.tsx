@@ -66,12 +66,22 @@ export const AboutAvatarStyled = styled.section`
   }
 
   p {
-    width: 560px;
-    margin: 20px auto 0;
+    font-size: 1.25rem;
+    width: 660px;
+    margin: 30px auto 0;
     word-wrap: break-word;
+    transition: max-height 0.7s;
+
     @media (max-width: 575px) {
       width: 340px;
       padding: 10px;
     }
   }
+`;
+
+export const AboutButtonStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 `;
