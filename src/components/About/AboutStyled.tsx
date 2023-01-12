@@ -11,7 +11,7 @@ export const AboutStyled = styled.div`
   border: #ffffff 8px solid;
   object-fit: cover;
 
-  @media (max-width: 575px) {
+  @media (max-width: 700px) {
     width: 340px;
     height: 340px;
     margin-top: -238px;
@@ -21,7 +21,6 @@ export const AboutStyled = styled.div`
 export const AboutAvatarStyled = styled.section`
   min-height: 806px;
 
-  position: relative;
   color: #111111;
   font-size: 1rem;
   line-height: 1.6;
@@ -33,6 +32,10 @@ export const AboutAvatarStyled = styled.section`
     width: 380px;
     margin: 30px auto 0;
     line-height: 1.3em;
+    @media (max-width: 700px) {
+      padding: 20px;
+      width: 100%;
+    }
   }
   h2 {
     text-transform: uppercase;
@@ -43,9 +46,12 @@ export const AboutAvatarStyled = styled.section`
     margin: 60px auto 0;
     line-height: 1.3em;
 
+    @media (max-width: 700px) {
+      padding: 20px;
+      width: 100%;
+    }
     @media (max-width: 575px) {
-      font-size: 1.5rem;
-      width: 340px;
+      font-size: 2.2rem;
     }
   }
 
@@ -55,13 +61,14 @@ export const AboutAvatarStyled = styled.section`
 
   .one {
     height: 403px;
-    margin-top: 0;
+    margin-top: 93px;
     margin-bottom: 0;
     background-image: none;
     background-color: #f2f2f2;
 
-    @media (max-width: 575px) {
+    @media (max-width: 700px) {
       height: 298px;
+      margin-top: 238px;
     }
   }
 
@@ -70,11 +77,19 @@ export const AboutAvatarStyled = styled.section`
     width: 660px;
     margin: 30px auto 0;
     word-wrap: break-word;
-    transition: max-height 0.7s;
 
-    @media (max-width: 575px) {
-      width: 340px;
-      padding: 10px;
+    @media (max-width: 750px) {
+      padding: 0 20px;
+      width: 100%;
+    }
+  }
+
+  p,
+  h2,
+  h3 {
+    text-align: center;
+
+    @media (max-width: 900px) {
     }
   }
 `;

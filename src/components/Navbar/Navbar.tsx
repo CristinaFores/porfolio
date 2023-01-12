@@ -6,7 +6,9 @@ const Navbar = (): JSX.Element => {
     <NavbarStyled>
       <Link to={"/about"}>About me</Link>
       <Link to={"/projects"}>Projects</Link>
-      <Link to={"/contact"}>Contact</Link>
+      <Link to={"/contact"} className="contact">
+        Contact
+      </Link>
     </NavbarStyled>
   );
 };
