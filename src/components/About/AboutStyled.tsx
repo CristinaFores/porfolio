@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutStyled = styled.div`
   width: 422px;
   height: 422px;
-  background-image: url("./images/cristinaPhoto.jpg");
+  background-image: url("./images/image.jpg");
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 50%;
@@ -37,6 +37,7 @@ export const AboutAvatarStyled = styled.section`
       width: 100%;
     }
   }
+
   h2 {
     text-transform: uppercase;
     font-weight: 300;
@@ -72,10 +73,11 @@ export const AboutAvatarStyled = styled.section`
     }
   }
 
-  p {
+  p,
+  a {
     font-size: 1.25rem;
     width: 660px;
-    margin: 30px auto 0;
+    margin: 15px auto 0;
     word-wrap: break-word;
 
     @media (max-width: 750px) {
@@ -86,11 +88,9 @@ export const AboutAvatarStyled = styled.section`
 
   p,
   h2,
-  h3 {
+  h3,
+  a {
     text-align: center;
-
-    @media (max-width: 900px) {
-    }
   }
 `;
 
@@ -98,5 +98,32 @@ export const AboutButtonStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 15px;
+`;
+
+export const TextSpanStyled = styled.span`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-top: 30px;
+
+  a {
+    color: ${(props) => props.theme.colors.primary.dark};
+    width: fit-content;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    padding: 8px 32px;
+    font-weight: bold;
+    &:hover {
+      border-radius: 4px;
+      outline: 0;
+      box-shadow: 0 0 8px 0.2rem rgb(27 81 189 / 20%);
+      background-color: rgb(132 155 200 / 20%);
+
+      transition: box-shadow 0.25s ease-in-out,
+        background-color 0.25s ease-in-out;
+    }
+  }
 `;
