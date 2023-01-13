@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutStyled = styled.div`
   width: 422px;
   height: 422px;
-  background-image: url("./images/image.jpg");
+  background-image: url("./images/cristina.jpg");
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 50%;
