@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ContactMeStyled = styled.form`
+  width: 60rem;
   margin-top: 60px;
   margin-bottom: 60px;
   padding-left: 2rem;
