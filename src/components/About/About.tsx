@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Element } from "react-scroll";
 import Button from "../Button/Button";
 import {
   AboutStyled,
@@ -17,21 +17,24 @@ const About = (): JSX.Element => {
   return (
     <AboutAvatarStyled>
       <div className="one"></div>
-      <AboutStyled></AboutStyled>
-      <h2>
-        Hi!
-        <br />
-        I am Cristina <br />
-      </h2>
-      <h3>
-        Full-stack
-        <b> Web developer </b>
-      </h3>
+      <Element name="about">
+        <AboutStyled></AboutStyled>
+
+        <h2>
+          Hi!
+          <br />
+          I am Cristina <br />
+        </h2>
+        <h3>
+          Full-stack
+          <b> Web developer </b>
+        </h3>
+      </Element>
       <TextSpanStyled>
         <p>{showText ? article.bio : article.bio.substring(0, 0) + ""}</p>
-        <Link to={"/project"}>
+        {/* <Link to={"/project"}>
           {showText ? article.link : article.bio.substring(0, 0) + ""}
-        </Link>
+        </Link> */}
       </TextSpanStyled>
       <AboutButtonStyled>
         <Button

@@ -7,7 +7,6 @@ export const SectionCardStyled = styled.section`
     font-weight: 300;
     letter-spacing: 4px;
     font-size: 3rem;
-
     margin: 60px auto 0;
     margin-bottom: 60px;
     line-height: 1.3em;
@@ -22,11 +21,13 @@ export const SectionCardStyled = styled.section`
 
     @media (max-width: 700px) {
       flex-direction: column;
+      gap: 20px;
     }
   }
 
-  margin: 0 100px;
+  margin: 100px 100px;
+
   @media (max-width: 900px) {
-    margin: 0 40px;
+    margin: 100px 40px;
   }
 `;
