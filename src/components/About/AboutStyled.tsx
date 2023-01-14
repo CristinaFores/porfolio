@@ -108,19 +108,21 @@ export const TextSpanStyled = styled.span`
 
   a {
     color: ${(props) => props.theme.colors.primary.dark};
+    border: rgb(132 155 200 / 30%) solid 1px;
+    background-color: rgb(132 155 200 / 5%);
+    border-radius: 4px;
     width: fit-content;
-    text-transform: uppercase;
     margin-bottom: 25px;
     font-size: 1.2rem;
     margin-bottom: 25px;
     padding: 8px 32px;
     font-weight: bold;
+
     &:hover {
       border-radius: 4px;
       outline: 0;
       box-shadow: 0 0 8px 0.2rem rgb(27 81 189 / 20%);
       background-color: rgb(132 155 200 / 20%);
-
       transition: box-shadow 0.25s ease-in-out,
         background-color 0.25s ease-in-out;
     }
