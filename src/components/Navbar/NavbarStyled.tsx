@@ -9,15 +9,10 @@ export const NavbarStyled = styled.nav`
   font-weight: 700;
   justify-content: end;
   background: ${(props) => props.theme.colors.primary.darkBlue};
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
 
   @media (max-width: 700px) {
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 0.2rem;
   }
 
   .contact {

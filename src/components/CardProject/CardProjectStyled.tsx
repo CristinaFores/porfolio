@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const CardProjectStyled = styled.div`
-  text-transform: uppercase;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  border-radius: 5px;
   h4 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
 
@@ -67,11 +69,8 @@ export const CardProjectStyled = styled.div`
         width: 100%;
         height: 100%;
         border-radius: 0;
+        border-radius: 5px;
       }
-    }
-
-    @media (max-width: 767.98px) {
-      margin-bottom: 30px;
     }
 
     .portfolio-card {
@@ -85,6 +84,7 @@ export const CardProjectStyled = styled.div`
 
   .img-responsive {
     width: 100% !important;
+    border-radius: 5px;
   }
 
   .rounded {
@@ -92,5 +92,6 @@ export const CardProjectStyled = styled.div`
   }
   img {
     width: 350px;
+    border-radius: 5px;
   }
 `;

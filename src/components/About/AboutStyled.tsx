@@ -28,7 +28,7 @@ export const AboutAvatarStyled = styled.section`
   h3 {
     font-weight: 300;
     letter-spacing: 4px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 380px;
     margin: 30px auto 0;
     line-height: 1.3em;
@@ -62,14 +62,13 @@ export const AboutAvatarStyled = styled.section`
 
   .one {
     height: 403px;
-    margin-top: 93px;
+
     margin-bottom: 0;
     background-image: none;
     background-color: #f2f2f2;
 
     @media (max-width: 700px) {
       height: 298px;
-      margin-top: 238px;
     }
   }
 

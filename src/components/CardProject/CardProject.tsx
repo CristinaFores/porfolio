@@ -5,6 +5,7 @@ interface CardProjectProps {
   textImage: string;
   textApp: string;
   titleApp: string;
+  action?: () => void;
 }
 
 const CardProject = ({
@@ -12,19 +13,22 @@ const CardProject = ({
   textImage,
   textApp,
   titleApp,
+  action,
 }: CardProjectProps): JSX.Element => {
   return (
-    <CardProjectStyled>
-      <a href="/" className="portfolio-card">
-        <img src={image} className="portfolio-card-img" alt={textImage} />
-        <span className="portfolio-card-overlay">
-          <span className="portfolio-card-caption">
-            <h4>{titleApp} </h4>
-            <p>{textApp}</p>
+    <>
+      <CardProjectStyled>
+        <a href="/" className="portfolio-card">
+          <img src={image} className="portfolio-card-img" alt={textImage} />
+          <span className="portfolio-card-overlay">
+            <span className="portfolio-card-caption">
+              <h4>{titleApp} </h4>
+              <p>{textApp}</p>
+            </span>
           </span>
-        </span>
-      </a>
-    </CardProjectStyled>
+        </a>
+      </CardProjectStyled>
+    </>
   );
 };
 
