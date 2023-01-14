@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SkillsStyled = styled.section`
-  margin: 0 20px;
+  margin: 0 40px;
   h4 {
     text-align: center;
     text-transform: uppercase;
