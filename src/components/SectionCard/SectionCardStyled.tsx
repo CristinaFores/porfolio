@@ -26,7 +26,8 @@ export const SectionCardStyled = styled.section`
   }
 
   margin: 100px 100px;
-
+  padding-bottom: 80px;
+  padding-top: 100px;
   @media (max-width: 900px) {
     margin: 100px 40px;
   }
