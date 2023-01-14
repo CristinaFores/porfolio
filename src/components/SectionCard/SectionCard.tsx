@@ -4,8 +4,8 @@ import { Element } from "react-scroll";
 const SectionCard = (): JSX.Element => {
   return (
     <>
-      <SectionCardStyled>
-        <Element name="projects">
+      <Element name="projects">
+        <SectionCardStyled>
           <div>
             <h3>Projects</h3>
 
@@ -30,8 +30,8 @@ const SectionCard = (): JSX.Element => {
               />
             </div>
           </div>
-        </Element>
-      </SectionCardStyled>
+        </SectionCardStyled>
+      </Element>
     </>
   );
 };
