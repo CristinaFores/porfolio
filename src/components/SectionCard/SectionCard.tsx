@@ -50,49 +50,20 @@ const SectionCard = (): JSX.Element => {
                 </IconsStyled>
               </ContaintCardStyled>
               <ContaintCardStyled>
-                {" "}
                 <CardProject
-                  image="../../.././images/image.jpg"
+                  image="../../.././images/todo.jpg"
                   textImage={""}
-                  textApp={"text"}
-                  titleApp={"Project"}
+                  textApp={"Things to do"}
+                  titleApp={"To Do"}
                 />
                 <IconsStyled>
                   <img
                     src="../../.././images/link.png"
                     alt=""
-                    onClick={() =>
-                      openInNewTab("https://photomate-cristina.netlify.app/")
-                    }
-                    width="40rem"
-                    height="40rem"
-                  />
-                  <img
                     onClick={() =>
                       openInNewTab(
-                        "https://github.com/CristinaFores/photomate-fronted"
+                        "https://202209-w6ch1-cristina-fores.netlify.app/"
                       )
-                    }
-                    alt="dd"
-                    src="../../.././images/githubsquare.svg"
-                    width="40rem"
-                    height="40rem"
-                  />
-                </IconsStyled>
-              </ContaintCardStyled>
-              <ContaintCardStyled>
-                <CardProject
-                  image="../../.././images/image.jpg"
-                  textImage={""}
-                  textApp={"text"}
-                  titleApp={"Project"}
-                />
-                <IconsStyled>
-                  <img
-                    src="../../.././images/link.png"
-                    alt=""
-                    onClick={() =>
-                      openInNewTab("https://photomate-cristina.netlify.app/")
                     }
                     width="40rem"
                     height="40rem"
