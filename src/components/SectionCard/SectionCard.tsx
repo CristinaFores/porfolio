@@ -22,7 +22,7 @@ const SectionCard = (): JSX.Element => {
               <ContaintCardStyled>
                 <CardProject
                   image="../../.././images/login.jpg"
-                  textImage={""}
+                  textImage={"Social Network"}
                   textApp={"Social Network"}
                   titleApp={"Photomate"}
                 />
@@ -32,6 +32,38 @@ const SectionCard = (): JSX.Element => {
                     alt=""
                     onClick={() =>
                       openInNewTab("https://photomate-cristina.netlify.app/")
+                    }
+                    width="40rem"
+                    height="40rem"
+                  />
+                  <img
+                    onClick={() =>
+                      openInNewTab(
+                        "https://github.com/CristinaFores/photomate-fronted"
+                      )
+                    }
+                    alt="dd"
+                    src="../../.././images/githubsquare.svg"
+                    width="40rem"
+                    height="40rem"
+                  />
+                </IconsStyled>
+              </ContaintCardStyled>
+              <ContaintCardStyled>
+                <CardProject
+                  image="../../.././images/todo.jpg"
+                  textImage={""}
+                  textApp={"Things to do"}
+                  titleApp={"To Do"}
+                />
+                <IconsStyled>
+                  <img
+                    src="../../.././images/link.png"
+                    alt=""
+                    onClick={() =>
+                      openInNewTab(
+                        "https://202209-w6ch1-cristina-fores.netlify.app/"
+                      )
                     }
                     width="40rem"
                     height="40rem"
