@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const ContactStyled = styled.section`
-  padding: 80px 80px 20px 80px;
+  padding: 50px;
   background-color: ${(props) => props.theme.colors.primary.darkBlue};
   color: ${(props) => props.theme.colors.primary.base};
+
   h4 {
     text-align: center;
     text-transform: uppercase;
@@ -21,7 +22,6 @@ export const ContactStyled = styled.section`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 2rem;
   }
 
   img {
