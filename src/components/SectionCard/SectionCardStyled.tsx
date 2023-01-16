@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SectionCardStyled = styled.section`
+  padding: 30px 0;
   h3 {
     text-align: center;
     font-weight: 300;
@@ -16,39 +17,33 @@ export const SectionCardStyled = styled.section`
   }
   .row {
     display: flex;
-    gap: 30px;
-
-    @media (max-width: 700px) {
+    justify-content: center;
+    padding-bottom: 30px;
+    @media (max-width: 800px) {
       flex-direction: column;
-      gap: 20px;
+      gap: 60px;
     }
-  }
-
-  padding: 100px 100px;
-  padding-bottom: 80px;
-  padding-top: 100px;
-  @media (max-width: 900px) {
-    margin: 100px 40px;
   }
 `;
 
 export const ContaintCardStyled = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const IconsStyled = styled.div`
   display: flex;
   gap: 3rem;
-  margin-top: 2rem;
   justify-content: center;
+  margin-top: 2rem;
 
   img {
     object-fit: contain;
     transition: all 0.3s ease 0s;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.3);
     }
   }
 `;
