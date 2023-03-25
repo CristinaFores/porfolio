@@ -21,7 +21,7 @@ const SectionCard = (): JSX.Element => {
             <div className="row">
               <ContaintCardStyled>
                 <CardProject
-                  image="../../.././images/login.jpg"
+                  image="../../.././images/photomate.svg"
                   textImage={"Social Network"}
                   textApp={"Social Network"}
                   titleApp={"Photomate"}
@@ -51,19 +51,17 @@ const SectionCard = (): JSX.Element => {
               </ContaintCardStyled>
               <ContaintCardStyled>
                 <CardProject
-                  image="../../.././images/todo.jpg"
+                  image="../../.././images/notes.svg"
                   textImage={""}
                   textApp={"Things to do"}
-                  titleApp={"To Do"}
+                  titleApp={"Blackboard & Notes"}
                 />
                 <IconsStyled>
                   <img
                     src="../../.././images/link.png"
                     alt=""
                     onClick={() =>
-                      openInNewTab(
-                        "https://202209-w6ch1-cristina-fores.netlify.app/"
-                      )
+                      openInNewTab("https://blackboards-notes.netlify.app/")
                     }
                     width="40rem"
                     height="40rem"
@@ -71,7 +69,37 @@ const SectionCard = (): JSX.Element => {
                   <img
                     onClick={() =>
                       openInNewTab(
-                        "https://github.com/CristinaFores/photomate-fronted"
+                        "https://github.com/CristinaFores/notes-app-frontend"
+                      )
+                    }
+                    alt="dd"
+                    src="../../.././images/githubsquare.svg"
+                    width="40rem"
+                    height="40rem"
+                  />
+                </IconsStyled>
+              </ContaintCardStyled>
+              <ContaintCardStyled>
+                <CardProject
+                  image="../../.././images/search-movies.svg"
+                  textImage={""}
+                  textApp={"Search for movies"}
+                  titleApp={"Movies"}
+                />
+                <IconsStyled>
+                  <img
+                    src="../../.././images/link.png"
+                    alt=""
+                    onClick={() =>
+                      openInNewTab("https://search-movies-cris.netlify.app/")
+                    }
+                    width="40rem"
+                    height="40rem"
+                  />
+                  <img
+                    onClick={() =>
+                      openInNewTab(
+                        "https://github.com/CristinaFores/search-movies"
                       )
                     }
                     alt="dd"
