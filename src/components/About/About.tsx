@@ -18,35 +18,66 @@ const About = (): JSX.Element => {
   return (
     <AboutAvatarStyled>
       <div className="one"></div>
-      <Element name="about">
+      <Element name="about" className="about">
         <AboutStyled></AboutStyled>
 
-        <h2>
+        <h3>
           Hi!
           <br />
           I am Cristina <br />
-        </h2>
-        <h3>
+        </h3>
+        <h2>
           Full-stack
           <b> Web developer </b>
-        </h3>
+        </h2>
       </Element>
       <TextSpanStyled>
         <p>{article.bio}</p>
       </TextSpanStyled>
       <AboutButtonStyled>
-        <TextSpanStyled>
-          <Link
-            to="https://drive.google.com/file/d/1avl99LNccJtkaG5VJF6HPxPzgLEgyUl2/view?usp=sharing"
-            onClick={() =>
-              openInNewTab(
-                "https://drive.google.com/file/d/1avl99LNccJtkaG5VJF6HPxPzgLEgyUl2/view?usp=sharing"
-              )
-            }
-          >
-            To Download CV
-          </Link>
-        </TextSpanStyled>
+        <TextSpanStyled></TextSpanStyled>
+        <div className="button">
+          <div className="button-wrapper">
+            <div className="text">
+              {" "}
+              <Link
+                to="https://drive.google.com/file/d/1avl99LNccJtkaG5VJF6HPxPzgLEgyUl2/view?usp=sharing"
+                onClick={() =>
+                  openInNewTab(
+                    "https://drive.google.com/file/d/1avl99LNccJtkaG5VJF6HPxPzgLEgyUl2/view?usp=sharing"
+                  )
+                }
+              >
+                Download CV
+              </Link>
+            </div>
+            <span className="icon">
+              <svg
+                onClick={() =>
+                  openInNewTab(
+                    "https://drive.google.com/file/d/1avl99LNccJtkaG5VJF6HPxPzgLEgyUl2/view?usp=sharing"
+                  )
+                }
+                viewBox="0 0 24 24"
+                preserveAspectRatio="xMidYMid meet"
+                height="2em"
+                width="2em"
+                role="img"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                  fill="none"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </div>
       </AboutButtonStyled>
     </AboutAvatarStyled>
   );
