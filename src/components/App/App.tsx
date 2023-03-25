@@ -13,8 +13,9 @@ function App() {
       <Navbar />
       <AppStyled>
         <About />
-        <Skills />
         <SectionCard />
+        <Skills />
+
         <Contact />
       </AppStyled>
     </>
