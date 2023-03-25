@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 export const SectionCardStyled = styled.section`
-  padding: 30px 0;
+  padding: 60px 30px;
   h3 {
     text-align: center;
     font-weight: 300;
     letter-spacing: 4px;
     font-size: 3rem;
-    margin: 60px auto 0;
-    margin-bottom: 60px;
+    padding-bottom: 30px;
     line-height: 1.3em;
-
+    text-transform: uppercase;
     @media (max-width: 575px) {
       font-size: 2rem;
     }
@@ -19,9 +18,10 @@ export const SectionCardStyled = styled.section`
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+    gap: 2rem;
     @media (max-width: 800px) {
       flex-direction: column;
-      gap: 60px;
+      gap: 70px;
     }
   }
 `;
